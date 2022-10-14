@@ -13,18 +13,36 @@ const App = () => {
 
     // let messagem = "hello vietnan world";
     // a variavel state atualiza o componente
+
+
+    const enviar = (e)=>{
+        e.preventDefault();// nao permite que a página recarregua após um envio de formulário(tarefa)
+    }
+
+
+
     return (
         <div className="app">
-            <div className="cabecalho-tarefas">
+            <div className="cabecalho">
                 <h1>lista de tarefas</h1>
             </div>
 
             <div className="formulario">
-                <p>Formulário</p>
+                <h2>insira a próxima tarefa</h2>
+                <form onSubmit={enviar}>
+                    <div className="">
+                        <label htmlFor="title"> Qual a tarefa?</label>
+                        <input type="text" placeholder="digite a tarefa" className="tarefa"></input>
+                    </div>
+                    <input className="botao" type="Submit" value="enviar"/>
+                </form>
             </div>
 
             <div className="lista">
-                <p>Listas</p>
+                <h2>Tarefas</h2>
+                {/* maneira de fzer uma condicional mais rapido */}
+                {tarefas.length === 0 && <p>não há tarefas</p>} 
+                
             </div>
         </div>
 

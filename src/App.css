@@ -1,0 +1,49 @@
+.app{
+    width: 40%;
+    margin: 2em auto;
+    background-color: #03045e;
+    border-radius: 8px;
+    color:aliceblue;
+    padding: 5px;
+}
+
+.cabecalho{
+    padding: 0.5px;
+    border-bottom: 2px solid #90e0ef;
+    text-align: center;
+}
+
+.cabecalho h1{
+    margin: 0;
+}
+
+.tarefa{
+    display: block;
+    width:80%;
+    position: relative;
+    left: 50px;
+    margin: 15px 0 15px 0;
+    padding: 5px;
+}
+
+.botao{
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 10px ;
+    position: relative;
+    left: 220px;
+    width: 90px;
+    
+    
+}
+
+.botao:hover{
+    background-color: blue;
+    border: #90e0ef 2px solid;
+    color:white;
+    font-weight: 300;
+    font-size: 102%;
+    padding: 8px;
+    margin-left: 10px ;
+    border-radius: 5px;
+}
